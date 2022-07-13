@@ -1,0 +1,59 @@
+[
+    {
+        "notaFiscal": "234564323/455",
+        "equipamento": "Brahma Visor",
+        "voltagem": "127v",
+        "codSap": "50756997",
+        "codPromax": "838665",
+        "quantidade": "99"
+    },
+    {
+        "equipamento": "Brahma Visor",
+        "voltagem": "220v",
+        "codSap": "50771097",
+        "codPromax": "849521",
+        "quantidade": "9"
+    },
+    {
+        "equipamento": "Skol Visor",
+        "voltagem": "127v",
+        "codSap": "50771371",
+        "codPromax": "849537",
+        "quantidade": "2"
+    },
+    {
+        "equipamento": "Skol Visor",
+        "voltagem": "220v",
+        "codSap": "50756998",
+        "codPromax": "838666",
+        "quantidade": "4"
+    },
+    {
+        "equipamento": "Bud Porta de Vidro",
+        "voltagem": "127v",
+        "codSap": "50757178",
+        "codPromax": "838784",
+        "quantidade": "3"
+    },
+    {
+        "equipamento": "Bud Porta de Vidro",
+        "voltagem": "220v",
+        "codSap": "50771319",
+        "codPromax": "849472",
+        "quantidade": "5"
+    },
+    {
+        "equipamento": "Bud Slim",
+        "voltagem": "127v",
+        "codSap": "50757393",
+        "codPromax": "838981",
+        "quantidade": "41"
+    },
+    {
+        "equipamento": "Bud Slim",
+        "voltagem": "220v",
+        "codSap": "50771318",
+        "codPromax": "849471",
+        "quantidade": "50"
+    }
+]

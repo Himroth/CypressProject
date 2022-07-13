@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-29T13:29:22.933Z",
+    "end": "2022-06-29T13:29:43.356Z",
+    "duration": 20423,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a443d843-4460-42f4-ab59-c5be4f93184b",
+      "title": "",
+      "fullFile": "cypress/e2e/relatorio.cy.js",
+      "file": "cypress/e2e/relatorio.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d59d3da9-ff56-4b99-8ea3-cb360df5c8a2",
+          "title": "Funcionalidade de geração de relatórios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "f974ef47-6a2d-48e5-9972-d1584305795b",
+              "title": "Geração de relatórios do assinatura ",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "18-Validar se no relatório de estoque exibe o usuário ambev que fez a adição de estoque",
+                  "fullTitle": "Funcionalidade de geração de relatórios Geração de relatórios do assinatura  18-Validar se no relatório de estoque exibe o usuário ambev que fez a adição de estoque",
+                  "timedOut": null,
+                  "duration": 19743,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const authorization = __webpack_require__(/*! ../fixtures/authorization.json */ \"./cypress/fixtures/authorization.json\");\nlet RgEquipamentoRandom1 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000);\nlet RgEquipamentoRandom2 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000);\nlet RgEquipamentoRandom3 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000);\nlet RgEquipamentoRandom4 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000);\nlet RgEquipamentoRandom5 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000);\nlet RgEquipamentoRandom6 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000);\nlet RgEquipamentoRandom7 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000);\nlet RgEquipamentoRandom8 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000);\nlet RgEquipamentoRandom9 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000);\ncy.addEquipamentoRequest(authorization, geografia.geografia, '0538', (0, _common.NfRandom)(), 3, 1, dayjs().format('DD/MM/YYYY'), 5, RgEquipamentoRandom1, 5, RgEquipamentoRandom2, 5, RgEquipamentoRandom3, 5, RgEquipamentoRandom4, 5, RgEquipamentoRandom5, 5, RgEquipamentoRandom6, 5, RgEquipamentoRandom7, 5, RgEquipamentoRandom8, 5, RgEquipamentoRandom9);\ncy.selectGeografiaOperacaoNomeOpecarao(geografia.geografia, cdd.cdd, nomeOperacao.nomeOperacao);\nrelatorioPage.menuButtonRelatorio.click();\ncy.selectTipoDeRelatorio(tipoRelatorio.Estoque);\ncy.clickBotaoExtrairRelatorio();\ncy.readFile('cypress/downloads/extracted.csv').should('have.string', Cypress.config('usuario').usuario);\ncy.readFile('cypress/downloads/extracted.csv').should('have.string', RgEquipamentoRandom1);\ncy.readFile('cypress/downloads/extracted.csv').should('have.string', RgEquipamentoRandom2);\ncy.readFile('cypress/downloads/extracted.csv').should('have.string', RgEquipamentoRandom3);\ncy.readFile('cypress/downloads/extracted.csv').should('have.string', RgEquipamentoRandom4);\ncy.readFile('cypress/downloads/extracted.csv').should('have.string', RgEquipamentoRandom5);\ncy.readFile('cypress/downloads/extracted.csv').should('have.string', RgEquipamentoRandom6);\ncy.readFile('cypress/downloads/extracted.csv').should('have.string', RgEquipamentoRandom7);\ncy.readFile('cypress/downloads/extracted.csv').should('have.string', RgEquipamentoRandom8);\ncy.readFile('cypress/downloads/extracted.csv').should('have.string', RgEquipamentoRandom9);\ncy.task('deleteRgs', {\n  Rg1: RgEquipamentoRandom1,\n  Rg2: RgEquipamentoRandom2,\n  Rg3: RgEquipamentoRandom3,\n  Rg4: RgEquipamentoRandom4,\n  Rg5: RgEquipamentoRandom5,\n  Rg6: RgEquipamentoRandom6,\n  Rg7: RgEquipamentoRandom7,\n  Rg8: RgEquipamentoRandom8,\n  Rg9: RgEquipamentoRandom9\n});",
+                  "err": {},
+                  "uuid": "be603064-08a0-49d8-99ce-35faf994a5b9",
+                  "parentUUID": "f974ef47-6a2d-48e5-9972-d1584305795b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "be603064-08a0-49d8-99ce-35faf994a5b9"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 19743,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "timestamp": "longDate"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
