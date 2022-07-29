@@ -2,7 +2,8 @@
 First professional project
 
 
-devDependencies
+devDependencies:
+
     "cypress": "^10.2.0",
     
     "dayjs": "^1.11.3",
