@@ -47,9 +47,9 @@ module.exports = defineConfig({
       timestamp: "longDate",
     },
     usuario: {
-      usuario: "develop",
-      dominio: "@gmail.com",
-      senha: "fusionenergydrink",
+      usuario: "",
+      dominio: "",
+      senha: "",
     },
   }
 })
