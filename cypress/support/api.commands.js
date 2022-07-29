@@ -5,7 +5,7 @@ Cypress.Commands.add('loginBySingleSignOnRequest', (email, password) => {
 
     const options = {
         method: 'POST',
-        url: 'https://icebev-nonprod.ambevdevs.com.br/backend-js/saml/login/',
+        url: '',
         form: true,
         body: {
             email: email,
@@ -26,7 +26,7 @@ Cypress.Commands.add('addEquipamentoRequest', (authorization, geografia, unb, no
     equipamento2, rg2, equipamento3, rg3, equipamento4, rg4, equipamento5, rg5, equipamento6, rg6, equipamento7, rg7, equipamento8, rg8, equipamento9, rg9) => {
     cy.request({
         method: 'POST',
-        url: 'https://icebev-nonprod.ambevdevs.com.br/signature-control-panel-backend/equipment/store',
+        url: '',
         headers: { Authorization: `Bearer ${authorization}` },
         body: {
             "geo": geografia,
