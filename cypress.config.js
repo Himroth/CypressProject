@@ -6,7 +6,7 @@ const uri = process.env.MONGO_URI
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://icebev-interno-nonprod.ambevdevs.com.br/signature-control-panel",
+    baseUrl: "",
     viewportWidth: 1200,
     viewportHeight: 1000,
     watchForFileChanges: false,
