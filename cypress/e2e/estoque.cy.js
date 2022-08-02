@@ -138,37 +138,13 @@ describe('Funcionalidade Estoque', () => {
             estoquePage.proximoButton.click()
 
             estoquePage.progressBar.should('have.text', progressStart)
-
-            estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
-                RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
-            estoquePage.proxButtonInsideRgModal.click()
-            estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
-                RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
-            estoquePage.proxButtonInsideRgModal.click()
-            estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
-                RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
-            estoquePage.proxButtonInsideRgModal.click()
-            estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
-                RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
-            estoquePage.proxButtonInsideRgModal.click()
-            estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
-                RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
-            estoquePage.proxButtonInsideRgModal.click()
-            estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
-                RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
-            estoquePage.proxButtonInsideRgModal.click()
-            estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
-                RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
-            estoquePage.proxButtonInsideRgModal.click()
-            estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
-                RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
-            estoquePage.proxButtonInsideRgModal.click()
-            estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
-                RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
-            estoquePage.proxButtonInsideRgModal.click()
-            estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
-                RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
-            estoquePage.proxButtonInsideRgModal.click()
+            
+            for (let i = 0; i < 10; i++) {
+                estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
+                    RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
+                estoquePage.proxButtonInsideRgModal.click()
+            }
+            
             estoquePage.add9Rgs(RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom(),
                 RgEquipamentoRandom(), RgEquipamentoRandom(), RgEquipamentoRandom())
 
@@ -178,15 +154,10 @@ describe('Funcionalidade Estoque', () => {
         });
 
         it('12, 50 -Validar se a modal de Salvar é exibida ao salvar os equipamentos', () => {
-            let RgEquipamentoRandom1 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000)
-            let RgEquipamentoRandom2 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000)
-            let RgEquipamentoRandom3 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000)
-            let RgEquipamentoRandom4 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000)
-            let RgEquipamentoRandom5 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000)
-            let RgEquipamentoRandom6 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000)
-            let RgEquipamentoRandom7 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000)
-            let RgEquipamentoRandom8 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000)
-            let RgEquipamentoRandom9 = JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000)
+            let listEquipmentsRandom = [];
+            for (var i = 0; i < 9; i++) {
+                listEquipmentsRandom.push(JSON.stringify(Math.floor(Math.random() * (89999999999999 - 10000000000000)) + 10000000000000))
+            }
 
             cy.selectGeografiaOperacaoNomeOpecarao(geografia.geografia, cdd.cdd, nomeOperacao.nomeOperacao)
             estoquePage.AddButton.click()
@@ -194,17 +165,17 @@ describe('Funcionalidade Estoque', () => {
                 dadosEquipamento[1].equipamento, dadosEquipamento[1].voltagem, dadosEquipamento[1].quantidade)
             estoquePage.addEquipmentButton.click()
             estoquePage.proximoButton.click()
-            estoquePage.add9Rgs(RgEquipamentoRandom1, RgEquipamentoRandom2, RgEquipamentoRandom3, RgEquipamentoRandom4, RgEquipamentoRandom5, RgEquipamentoRandom6,
-                RgEquipamentoRandom7, RgEquipamentoRandom8, RgEquipamentoRandom9)
+            estoquePage.add9Rgs(listEquipmentsRandom[0], listEquipmentsRandom[1], listEquipmentsRandom[2], listEquipmentsRandom[3], listEquipmentsRandom[4], listEquipmentsRandom[5],
+                listEquipmentsRandom[6], listEquipmentsRandom[7], listEquipmentsRandom[8])
             estoquePage.buttonSalvarModalRgs.click()
 
             estoquePage.titleModalMsgsAndAlerts.should('have.text', 'Estoque adicionado com sucesso')
             estoquePage.subTitleModalMsgsAndAlerts.should('contain', dadosEquipamento[1].quantidade)
 
             cy.task('deleteRgs', {
-                Rg1: RgEquipamentoRandom1, Rg2: RgEquipamentoRandom2, Rg3: RgEquipamentoRandom3,
-                Rg4: RgEquipamentoRandom4, Rg5: RgEquipamentoRandom5, Rg6: RgEquipamentoRandom6,
-                Rg7: RgEquipamentoRandom7, Rg8: RgEquipamentoRandom8, Rg9: RgEquipamentoRandom9
+                Rg1: listEquipmentsRandom[0], Rg2: listEquipmentsRandom[1], Rg3: listEquipmentsRandom[2],
+                Rg4: listEquipmentsRandom[3], Rg5: listEquipmentsRandom[4], Rg6: listEquipmentsRandom[5],
+                Rg7: listEquipmentsRandom[6], Rg8: listEquipmentsRandom[7], Rg9: listEquipmentsRandom[8]
             })
         });
 
